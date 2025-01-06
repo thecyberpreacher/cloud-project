@@ -1,5 +1,5 @@
 ---
-lab:
+CyberPreacher Lab:
     title: '01 - Set Up a Secure Cloud Environment'
     difficulty: 'Easy'
 ---
@@ -136,189 +136,21 @@ In this task, you will assign **Bob** with contributor role-based access control
 
 9. Click **Review + Assign**.
 
-#### Task2: Use PowerShell to create the Junior Admins group and add the user account of Isabel Garcia to the group.
-
-In this task, you will create the Junior Admins group and add the user account of Isabel Garcia to the group by using PowerShell.
-
-1. In the same PowerShell session within the Cloud Shell pane, run the following to **create a new security group** named Junior Admins:
-   
-   ```powershell
-   New-AzureADGroup -DisplayName 'Junior Admins43846135' -MailEnabled $false -SecurityEnabled $true -MailNickName JuniorAdmins
-   ```
-   
-2. In the PowerShell session within the Cloud Shell pane, run the following to **list groups** in your Microsoft Entra tenant (the list should include the Senior Admins and Junior Admins groups)
-   
-   ```powershell
-   Get-AzureADGroup
-   ```
-
-3. In the PowerShell session within the Cloud Shell pane, run the following to **obtain a reference** to the user account of Isabel Garcia:
-
-   ```powershell
-   $user = Get-AzureADUser -Filter "UserPrincipalName eq 'Isabel-43846135@LODSPRODMCA.onmicrosoft.com'"
-   ```
-
-4. In the PowerShell session within the Cloud Shell pane, run the following to add the user account of Isabel to the Junior Admins43846135 group:
-   ```powershell
-   Add-AzADGroupMember -MemberUserPrincipalName $user.userPrincipalName -TargetGroupDisplayName "Junior Admins43846135"
-   ```
-
-5. In the PowerShell session within the Cloud Shell pane, run the following to verify that the Junior Admins43846135 group contains the user account of Isabel:
-   
-   ```powershell
-    Get-AzADGroupMember -GroupDisplayName "Junior Admins43846135"
-    ```
-   
-> Result: You used PowerShell to create a user and a group account, and added the user account to the group account. 
-
 ### Exercise 3: Create a Service Desk group containing the user account of Dylan Williams as its member.
+
+#### Task2: Enable Azure Monitor and Log Analytics.
+
+1. 
 
 #### Estimated timing: 10 minutes
 
-In this exercise, you will complete the following tasks:
 
-- Task 1: Use Azure CLI to create a user account for Dylan Williams.
-- Task 2: Use Azure CLI to create the Service Desk group and add the user account of Dylan to the group. 
-
-#### Task 1: Use Azure CLI to create a user account for Dylan Williams.
-
-In this task, you will create a user account for Dylan Williams.
-
-1. In the drop-down menu in the upper-left corner of the Cloud Shell pane, select **Bash**, and, when prompted, click **Confirm**. 
-
-2. In the Bash session within the Cloud Shell pane, run the following to identify the name of your Microsoft Entra tenant:
-
-    ```cli
-    DOMAINNAME=$(az ad signed-in-user show --query 'userPrincipalName' | cut -d '@' -f 2 | sed 's/\"//')
-    ```
-
-3. In the Bash session within the Cloud Shell pane, run the following to create a user, Dylan Williams. Use *yourdomain*.
- 
-    ```cli
-    az ad user create --display-name "Dylan Williams" --password "Pa55w.rd1234" --user-principal-name Dylan@$DOMAINNAME
-    ```
-      
-4. In the Bash session within the Cloud Shell pane, run the following to list Microsoft Entra ID user accounts (the list should include user accounts of Joseph, Isabel, and Dylan)
-	
-    ```cli
-    az ad user list --output table
-    ```
-
-#### Task 2: Use Azure CLI to create the Service Desk group and add the user account of Dylan to the group. 
-
-In this task, you will create the Service Desk group and assign Dylan to the group. 
-
-1. In the same Bash session within the Cloud Shell pane, run the following to create a new security group named Service Desk.
-
-    ```cli
-    az ad group create --display-name "Service Desk" --mail-nickname "ServiceDesk"
-    ```
- 
-2. In the Bash session within the Cloud Shell pane, run the following to list the Microsoft Entra ID groups (the list should include Service Desk, Senior Admins, and Junior Admins groups):
-
-    ```cli
-    az ad group list -o table
-    ```
-
-3. In the Bash session within the Cloud Shell pane, run the following to obtain a reference to the user account of Dylan Williams: 
-
-    ```cli
-    USER=$(az ad user list --filter "displayname eq 'Dylan Williams'")
-    ```
-
-4. In the Bash session within the Cloud Shell pane, run the following to obtain the objectId property of the user account of Dylan Williams: 
-
-    ```cli
-    OBJECTID=$(echo $USER | jq '.[].id' | tr -d '"')
-    ```
-
-5. In the Bash session within the Cloud Shell pane, run the following to add the user account of Dylan to the Service Desk group: 
-
-    ```cli
-    az ad group member add --group "Service Desk" --member-id $OBJECTID
-    ```
-
-6. In the Bash session within the Cloud Shell pane, run the following to list members of the Service Desk group and verify that it includes the user account of Dylan:
-
-    ```cli
-    az ad group member list --group "Service Desk"
-    ```
-
-7. Close the Cloud Shell pane.
-
-> Result: Using Azure CLI you created a user and a group accounts, and added the user account to the group. 
 
 
 ### Exercise 4: Assign the Virtual Machine Contributor role to the Service Desk group.
 
 #### Estimated timing: 10 minutes
 
-In this exercise, you will complete the following tasks:
-
-- Task 1: Create a resource group. 
-- Task 2: Assign the Service Desk Virtual Machine Contributor permissions to the resource group.  
 
 #### Task 1: Create a resource group
-
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
-
-2. On the **Resource groups** blade, click **+ Create** and specify the following settings:
-
-   |Setting|Value|
-   |---|---|
-   |Subscription name|the name of your Azure subscription|
-   |Resource group name|**AZ500Lab01**|
-   |Location|**East US**|
-
-3. Click **Review + create** and then **Create**.
-
-   >**Note**: Wait for the resource group to deploy. Use the **Notification** icon (top right) to track progress of the deployment status.
-
-4. Back on the **Resource groups** blade, refresh the page and verify your new resource group appears in the list of resource groups.
-
-
 #### Task 2: Assign the Service Desk Virtual Machine Contributor permissions. 
-
-1. On the **Resource groups** blade, click the **AZ500LAB01** resource group entry.
-
-2. On the **AZ500Lab01** blade, click **Access control (IAM)** in the middle pane.
-
-3. On the **AZ500Lab01 \| Access control (IAM)** blade, click **+ Add** and then, in the drop-down menu, click **Add role assignment**.
-
-4. On the **Add role assignment** blade, specify the following settings and click **Next** after each step:
-
-   |Setting|Value|
-   |---|---|
-   |Role in the search tab|**Virtual Machine Contributor**|
-   |Assign access to (Under Members Pane)|**User, group, or service principal**|
-   |Select (+Select Members)|**Service Desk**|
-
-5. Click **Review + assign** twice to create the role assignment.
-
-6. From the **Access control (IAM)** blade, select **Role assignments**.
-
-7. On the **AZ500Lab01 \| Access control (IAM)** blade, on the **Check access** tab, in the **Search by name or email address** text box, type **Dylan Williams**.
-
-8. In the list of search results, select the user account of Dylan Williams and, on the **Dylan Williams assignments - AZ500Lab01** blade, view the newly created assignment.
-
-9. Close the **Dylan Williams assignments - AZ500Lab01** blade.
-
-10. Repeat the same last two steps to check access for **Joseph Price**. 
-
-> Result: You have assigned and checked RBAC permissions. 
-
-**Clean up resources**
-
-> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs.
-
-1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. 
-
-2. In the drop-down menu in the upper-left corner of the Cloud Shell pane, select **PowerShell**, and, when prompted, click **Confirm**. 
-
-3. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource group you created in this lab:
-  
-    ```
-    Remove-AzResourceGroup -Name "AZ500LAB01" -Force -AsJob
-    ```
-
-4.  Close the **Cloud Shell** pane. 
