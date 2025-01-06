@@ -103,15 +103,14 @@ In this task, you will Create an Azure AD User and assign the Security Administr
 
 > Result: You used the Azure Portal to create a user and assigned the user the Security Administrator role. 
 
-### Exercise 2: Configure RBAC role for the user and Enable Azure Monitor and Log Analytics.
+### Exercise 2: Configure RBAC role for the user.
 
-#### Estimated timing: 10 minutes
+#### Estimated timing: 5 minutes
 
 In this exercise, you will complete the following tasks:
 
 - Task 1: Configure Role-Based Access Control (RBAC) for Resource Group.
-- Task 2: Enable Azure Monitor and Log Analytics.
-- Task 3: Set Up Cost Alerts. 
+
 
 #### Task 1: Configure Role-Based Access Control (RBAC) for Resource Group.
 
@@ -136,14 +135,17 @@ In this task, you will assign **Bob** with contributor role-based access control
 
 9. Click **Review + Assign**.
 
-### Exercise 3: Create a Service Desk group containing the user account of Dylan Williams as its member.
+### Exercise 3: Enable Azure Monitor and Log Analytics and Set Up Cost Alerts.
+#### Estimated timing: 5 minutes
 
-#### Task2: Enable Azure Monitor and Log Analytics.
+In this exercise, you will complete the following tasks:
+
+- Task 1: Enable Azure Monitor and Log Analytics.
+- Task 2: Set Up Cost Alerts.
+
+#### Task1: Enable Azure Monitor and Log Analytics.
 
 1. 
-
-#### Estimated timing: 10 minutes
-
 
 
 
