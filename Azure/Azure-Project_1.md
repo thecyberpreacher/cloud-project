@@ -135,6 +135,8 @@ In this task, you will assign **Bob** with contributor role-based access control
 
 9. Click **Review + Assign**.
 
+> Result: You successfully configured a RBAC role for the Resource Group.
+
 ### Exercise 3: Enable Azure Monitor and Log Analytics and Set Up Cost Alerts.
 #### Estimated timing: 5 minutes
 
@@ -145,14 +147,46 @@ In this exercise, you will complete the following tasks:
 
 #### Task1: Enable Azure Monitor and Log Analytics.
 
-1. 
+1. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Monitor** and press the **Enter** key.
 
+2. In the **Monitor** blade, on the left pane select **Logs**. Close the **Welcome to Log Analytics** pane.
+    >**Note**: If prompted, do the following below, else Skip and go to step 6.
+3. Create a Log Analytics Workspace, using the following parameter:
 
+   |Setting|Value|
+   |---|---|
+   |Resource group|**CyberP-Project**|
+   |Name|**MyLog**|
+   |Region|**East US**|
 
-### Exercise 4: Assign the Virtual Machine Contributor role to the Service Desk group.
+4. Select **Review + Create**, then **Create**.
 
-#### Estimated timing: 10 minutes
+5. Return to **Monitor** blade, on the left pane select **Log**
 
+6. A pane will appear **Select a scope**. Under the **browse** tab, select your *subscription name*, then click **Apply**.
 
-#### Task 1: Create a resource group
-#### Task 2: Assign the Service Desk Virtual Machine Contributor permissions. 
+#### Task 2: Set Up Cost Alerts.
+
+1. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Cost Management** and press the **Enter** key.
+
+2. In the **Cost Management** blade, on the left pane click **Monitoring**, then select **Budgets**.
+
+3. In the **Cost Management: <your-subscription-name> | Budgets** blade, Click **+ Add**.
+
+4. In the **Create budget** blade, under **Budget Details** use the following parameters:
+   |Setting|Value|
+   |---|---|
+   |Name|**costalert_project**|
+   |Amount ($)|**$100**|
+
+5. Click **Next**.
+
+6. In the **Set alerts** tab, under **Alert conditions**: **Type** - Actual, **% of budget** - 100.
+
+7. Under **Alert recipients (email)**, type in your *<primary-mail@microsoft.com>*.
+
+8. Click **Create**.
+
+> Result: You successfully configured Azure Monitor and Log Analytics, and Set Up Cost Alerts.
+
+ >**Side Task**: Create a virtual machine, and assign **Bob** the Virtual machine contributor role for the machine. Then Log in as Bob and see what task **Bob** can perform with that role. Once done, take a screenshot of the completed task and upload on LinkedIn including the Hashtag #cloudprojectwithcyberpreacher while sharing your experiences around the project.
