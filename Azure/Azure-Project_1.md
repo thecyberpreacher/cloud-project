@@ -189,4 +189,9 @@ In this exercise, you will complete the following tasks:
 
 > Result: You successfully configured Azure Monitor and Log Analytics, and Set Up Cost Alerts.
 
+### Summary of Key Security Practices
+
+- **IAM**: Use least privilege principles for IAM roles and policies.
+- **Logging**: Enabled logging and monitoring.
+
  >**Side Task**: Create a virtual machine, and assign **Bob** the Virtual machine contributor role for the machine. Then Log in as Bob and see what task **Bob** can perform with that role. Once done, take a screenshot of the completed task and upload on LinkedIn including the Hashtag #cloudprojectwithcyberpreacher while sharing your experiences around the project.
