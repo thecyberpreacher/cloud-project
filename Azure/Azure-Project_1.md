@@ -29,7 +29,7 @@ In this lab, you will complete the following exercises:
 
 ## Instructions
 
-### Exercise 1: Create the Senior Admins group with the user account Joseph Price as its member. 
+### Exercise 1: Create the Resource Group and assign RBAC permission for the Security User on the group. 
 
 #### Estimated timing: 15 minutes
     
