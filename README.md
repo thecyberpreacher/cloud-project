@@ -2,6 +2,8 @@
 
 Whether you are a beginner aspiring to become an expert or you are a professional looking to get your hands dirty a little bit, then this repository is for you.
 
+Access HTML view - https://thecyberpreacher.github.io/cloud-project/
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
