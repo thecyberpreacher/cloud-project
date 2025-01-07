@@ -5,7 +5,7 @@ CyberPreacher Lab:
 ---
 
 # Project 01: Role-Based Access Control
-# CyberPreacher Edition
+## CyberPreacher Edition
 
 ## Project scenario
 
@@ -174,6 +174,7 @@ In this exercise, you will complete the following tasks:
 3. In the **Cost Management: <your-subscription-name> | Budgets** blade, Click **+ Add**.
 
 4. In the **Create budget** blade, under **Budget Details** use the following parameters:
+
    |Setting|Value|
    |---|---|
    |Name|**costalert_project**|
@@ -195,3 +196,5 @@ In this exercise, you will complete the following tasks:
 - **Logging**: Enabled logging and monitoring.
 
  >**Side Task**: Create a virtual machine, and assign **Bob** the Virtual machine contributor role for the machine. Then Log in as Bob and see what task **Bob** can perform with that role. Once done, take a screenshot of the completed task and upload on LinkedIn including the Hashtag #cloudprojectwithcyberpreacher while sharing your experiences around the project.
+
+ >**Note**: Ensure to delete every resources created during this project, to ensure cost management.
