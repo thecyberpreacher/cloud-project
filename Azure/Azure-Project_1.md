@@ -178,7 +178,7 @@ In this exercise, you will complete the following tasks:
    |Setting|Value|
    |---|---|
    |Name|**costalert_project**|
-   |Amount ($)|**$100**|
+   |Amount($)|**$100**|
 
 5. Click **Next**.
 
