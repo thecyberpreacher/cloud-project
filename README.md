@@ -20,9 +20,9 @@ Before you begin, ensure you have the following:
 
 ## Project List
 Select your desired cloud platform below:
-1. Azure - [Azure Projects](https://github.com/thecyberpreacher/cloud-project/tree/main/azure)
-2. AWS - [AWS Projects](https://github.com/thecyberpreacher/cloud-project/tree/main/aws)
-3. GCP - [GCP Projects](https://github.com/thecyberpreacher/cloud-project/tree/main/gcp)
+1. Azure - [Azure Projects](./Azure/README.md)
+2. AWS - [AWS Projects](./AWS/README.md)
+3. GCP - [GCP Projects](./GCP/README.md)
 
 ## Contributing
 We welcome contributions from the community. If you have a project idea or improvements, please fork the repository and submit a pull request.
