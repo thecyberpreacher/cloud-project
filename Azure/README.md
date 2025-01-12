@@ -33,3 +33,11 @@ Explore the following projects to enhance your cloud security posture using Azur
 ## Getting Started
 
 To get started with any of these security projects, click on the respective links to access the detailed documentation and tutorials. Secure your cloud environment with Azure!
+
+## Contributing
+
+We welcome contributions from the community. If you have a project or improvement to share, please submit a pull request.
+
+---
+
+Thank you for visiting our Azure Cloud Security Projects repository. We hope you find these resources helpful in securing your Azure environment.
