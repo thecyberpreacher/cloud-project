@@ -177,9 +177,10 @@ In this exercise, you will complete the following tasks:
 
    |Setting|Value|
    |---|---|
-   |Name|**costalert_project**|
-   |Amount($)|**$100**|
-
+   |Resource group|**CyberP-Project**|
+   |Name|**MyLog**|
+   |Region|**East US**|
+   
 5. Click **Next**.
 
 6. In the **Set alerts** tab, under **Alert conditions**: **Type** - Actual, **% of budget** - 100.
