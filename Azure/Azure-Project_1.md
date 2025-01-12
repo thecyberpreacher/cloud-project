@@ -33,7 +33,7 @@ In this lab, you will complete the following exercises:
 
 #### Estimated timing: 15 minutes
     
-    >**Note**: Please ensure that you have created an Azure Free Account at (https://portal.azure.com/), or Subscribe to Azure Student Package (For Students).
+    >**Note**: Please ensure that you have created an Azure Account with active subscription credit (https://portal.azure.com/), or Subscribe to Azure Student Package (https://aka.ms/student-account).
 
 In this exercise, you will complete the following tasks:
 
