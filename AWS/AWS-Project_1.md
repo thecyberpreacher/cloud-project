@@ -23,7 +23,7 @@ In this lab, you will complete the following exercises:
 
 #### Estimated timing: 15 minutes
 
-> **Note**: Please ensure that you have created an AWS Free Tier Account at (https://aws.amazon.com/free), or Subscribe to AWS Educate (For Students).
+> **Note**: Please ensure that you have created an AWS Account with an active credit at (https://aws.amazon.com/), or Subscribe to AWS Educate (For Students).
 
 In this exercise, you will complete the following tasks:
 - Task 1: Create a Resource Group.
