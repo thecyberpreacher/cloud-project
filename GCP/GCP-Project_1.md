@@ -1,4 +1,4 @@
-### GCP Project 01: Role-Based Access Control
+### GCP Project 01: Set Up a Secure Cloud Environment
 ## CyberPreacher Edition
 
 ## Project Scenario
@@ -55,51 +55,50 @@ In this task, you will create a project.
 
 In this task, you will create a GCP IAM User and assign the Security Administrator role.
 
-1. In the Google Cloud Console at `https://console.cloud.google.com/`.
+1. Navigate to IAM: Log into AWS Management Console and search for IAM.
 
-2. In the **Navigation menu**, go to **IAM & Admin** and select **Service accounts**.
+2. Create a User:
 
-3. On the **Service Accounts** page, select **+ Create Service Account**.
+3. Go to **Users** and click **Add Users**.
 
-4. On the **Create Service Account** page, specify the following settings:
+4. Provide a username (e.g., Bob).
 
-   |Setting|Value|
-   |---|---|
-   |Service account name|**Bob**|
-   |Role|**Security Admin**|
-   |Account ID|**Auto-generate**|
-   
-5. Click **Done**.
+5. Select Access Key - **Programmatic Access and AWS Management Console Access**.
 
-6. Copy the **Service Account Key** for Bob.
+6. Assign Permissions: and Choose **Attach policies directly**.
+
+8. Search for and select the policy **SecurityAdministrator**.
+
+9. Complete User Creation: Review details, create the user, and download the credentials file.
 
 > **Result**: You created a service account and assigned the Security Admin role.
 
-### Exercise 2: Configure IAM for the Project.
+### Exercise 2: Enable MFA for IAM User.
 
 #### Estimated timing: 5 minutes
 
 In this exercise, you will complete the following tasks:
-- Task 1: Configure Identity and Access Management (IAM) for the Project.
+- Task 1: Enable MFA for IAM User.
 
-#### Task 1: Configure Identity and Access Management (IAM) for the Project
+#### Task 1: Enable MFA for IAM User.
 
-In this task, you will assign **Bob** with the **Editor** role for the **CyberP-Project** project.
+In this task, you will enable Multifactor Authentication for the user **Bob**.
 
-1. In the **Navigation menu**, go to **IAM & Admin** and select **IAM**.
+1. In the **IAM dashboard**, select the **Users** tab.
 
-2. On the **IAM** page, click **+ Add**.
+2. Click on **Bob**.
 
-3. In the **Add members** dialog, specify the following:
+3. Under the **Security credentials** tab, locate the Assigned MFA device section and click **Manage**.
 
-   |Setting|Value|
-   |---|---|
-   |New Members|Service account ID of Bob|
-   |Roles|Editor|
+4. Choose **Virtual MFA device** and click **Continue**.
 
-4. Click **Save**.
+5. Use an MFA app like **Google Authenticator** to scan the QR code or manually enter the secret key.
 
-> **Result**: You successfully configured IAM for the Project.
+6. Enter two consecutive authentication codes from the app to complete the setup.
+
+7. Click **Assign MFA** to save changes.
+
+> **Result**: You successfully enabled MFA for **Bob**.
 
 ### Exercise 3: Enable GCP Cloud Monitoring and Logging and Set Up Billing Alerts.
 #### Estimated timing: 5 minutes

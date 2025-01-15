@@ -4,7 +4,7 @@ CyberPreacher Lab:
     difficulty: 'Easy'
 ---
 
-# Project 01: Role-Based Access Control
+# Project 01: Set Up a Secure Cloud Environment
 ## CyberPreacher Edition
 
 ## Project scenario
