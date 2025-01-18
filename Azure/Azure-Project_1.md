@@ -11,7 +11,7 @@ CyberPreacher Lab:
 
 A small startup recently migrated its infrastructure to the Azure cloud. However, they didn’t configure proper security controls. As a result:
 
-- A developer accidentally exposed sensitive data stored in an S3 bucket (AWS) or Cloud Storage (GCP) to the public.
+- A developer accidentally exposed sensitive data stored in an Azure Storage to the public.
 - An attacker gained access to the cloud environment using stolen credentials because MFA was not enabled.
 - The company incurred unexpected costs due to unauthorized resource usage, as there were no billing alerts or monitoring in place.
 
@@ -21,9 +21,9 @@ A small startup recently migrated its infrastructure to the Azure cloud. However
 
 In this lab, you will complete the following exercises:
 
-- Exercise 1: Create a Resource Group. 
-- Exercise 2: Create an Azure AD User and assign the Security Administrator role.
-- Exercise 3: Configure Role-Based Access Control (RBAC) for Resource Group. 
+- Exercise 1: Create an Entra ID User 
+- Exercise 2: Assign the Security Administrator role.
+- Exercise 3: Set up Conditional Access for Multi-Factor Authentication (MFA). 
 - Exercise 4: Enable Azure Monitor and Log Analytics.
 - Exercise 5: Set Up Cost Alerts.
 
@@ -33,44 +33,22 @@ In this lab, you will complete the following exercises:
 
 #### Estimated timing: 15 minutes
     
-    >**Note**: Please ensure that you have created an Azure Account with active subscription credit (https://portal.azure.com/), or Subscribe to Azure Student Package (https://aka.ms/student-account).
+>**Note**: Please ensure that you have created an Azure Account with active subscription credit (https://portal.azure.com/), or Subscribe to Azure Student Package (https://aka.ms/student-account).
 
 In this exercise, you will complete the following tasks:
 
-- Exercise 1: Create a Resource Group. 
-- Exercise 2: Create an Azure AD User and assign the Security Administrator role.
-- Exercise 3: Configure Role-Based Access Control (RBAC) for Resource Group. 
+- Task 1: Create an Entra ID User and assign the Security Administrator role.
+- Task 2: Assign Security Administrator role to User
+- Task 2: Set up Conditional Access for Multi-Factor Authentication (MFA)
 
-#### Task 1: Create a Resource Group 
+#### Task2: Create an Entra ID User and assign the Security Administrator role
 
-In this task, you will create a resource group. 
+In this task, you will Create an Entra ID User and assign the Security Administrator.
 
 1. Start a browser session and sign-in to the Azure portal **`https://portal.azure.com/`**.
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Microsoft Entra tenant associated with that subscription.
-
-2. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
-
-3. On the **Resource groups** blade of the Azure Portal, select **Create**.
-
-4. On the **Create a resource group** blade, specify the following settings of the **Basics** section:
-
-   |Setting|Value|
-   |---|---|
-   |Resource group|**CyberP-Project**|
-   |Region|**(US) East US**|
-
-5. Click **Review + create**.
-
-6. Click **Create**. 
-
-7. Refresh the **Resource groups** blade to verify the new resource group was created in your Azure portal.
-
-#### Task2: Create an Entra ID User and assign the Security Administrator role
-
-In this task, you will Create an Azure AD User and assign the Security Administrator.
-
-1. In the Azure portal at https://portal.azure.com. 
+\
 
 2. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra ID** and press the **Enter** key.
 
@@ -110,32 +88,40 @@ In this task, you will Create an Azure AD User and assign the Security Administr
 In this exercise, you will complete the following tasks:
 
 - Task 1: Configure Role-Based Access Control (RBAC) for Resource Group.
+- Task 2: Set up Conditional Access for Multi-Factor Authentication (MFA).
 
+#### Task 2: Set up Conditional Access for Multi-Factor Authentication (MFA)
 
-#### Task 1: Configure Role-Based Access Control (RBAC) for Resource Group.
+1. In the search bar at the top of the portal, type **"Azure Active Directory"** and select it from the search results.
 
-In this task, you will assign **Bob** with contributor role-based access control(RBAC) role for **CyberP-Project** resource group.
+2. In the Azure Active Directory blade, select **"Security"** from the left-hand menu.
 
-1. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
+3. Click on **"Conditional Access"** under the **"Security"** section.
 
-2. In the **Resource groups** blade, click **CyberP-Project** resource group.
+4. Click on **"+ New policy"** to create a new Conditional Access policy.
 
-3. In the **CyberP-Project** blade, on the left pane, click **Access control (IAM)**.
+5. **Name**: Provide a name for the policy "Require MFA for All Users".
 
-4. In the **CyberP-Project | Access control (IAM)** blade. Click **+ Add**, then select **Add role assignment**.
+6. **Assignments**: Select the users or groups this policy applies to. You can choose to apply it to all users or specific groups.
 
-5. In the **Add role assignment** blade, under **Role** tab, click **Privileged administrator roles**.
+7. **Cloud apps or actions**: Skip.
 
-6. Select the **Contributor** role, and click **Next**.
+8. **Conditions**: Skip.
 
-7. Under the **Member** tab, click **+ Select members**, then search and select **Bob**, then click **Select**. Cick **Next**.
+9. **Access controls**: Under **"Grant**, select **"Require multi-factor authentication**.
 
-8. Under **Assignment tab** tab, for the **Assignment tab** role, select **Active**.
- >**Note**: Ignore the warning for now: Contributor is a privileged administrator role. We recommend that you create eligible role assignments for this role or use PIM for Groups.
+10. **Session controls**: Optionally, configure session controls such as session timeout and persistent sessions.
 
-9. Click **Review + Assign**.
+11. **Enable policy**: Turn on the policy by toggling the switch to **"On"**.
 
-> Result: You successfully configured a RBAC role for the Resource Group.
+12. Review the settings to ensure everything is configured correctly.
+
+13. Click **"Create"** to save the policy.
+
+14. Ensure that users are prompted for MFA when they sign in under the conditions specified in the policy.
+15. Monitor the sign-in logs to verify that the policy is working as expected.
+
+> By following these steps, you can set up Conditional Access to require MFA for specific sign-in events, enhancing the security of your Azure environment.
 
 ### Exercise 3: Enable Azure Monitor and Log Analytics and Set Up Cost Alerts.
 #### Estimated timing: 5 minutes
