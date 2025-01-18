@@ -23,7 +23,7 @@ In this lab, you will complete the following exercises:
 
 #### Estimated timing: 15 minutes
 
-> **Note**: Please ensure that you have created an AWS Account with an active credit at (https://aws.amazon.com/), or Subscribe to AWS Educate (For Students).
+> **Note**: Please ensure that you have created an AWS Account with an active credit at (https://aws.amazon.com/), or apply for AWS free credit ([Here](https://pages.awscloud.com/GLOBAL_NCA_LN_ARRC-program-A300-2023.html)).
 
 In this exercise, you will complete the following tasks:
 - Task 1: Create a Resource Group.

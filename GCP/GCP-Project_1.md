@@ -1,40 +1,45 @@
-### GCP Project 01: Set Up a Secure Cloud Environment
+# Project 01: Set Up a Secure Cloud Environment
 ## CyberPreacher Edition
 
-## Project Scenario
-A small startup recently migrated its infrastructure to GCP. However, they didn’t configure proper security controls. As a result:
+## Project scenario
+
+A small startup recently migrated its infrastructure to the GCP cloud. However, they didn’t configure proper security controls. As a result:
+
 - A developer accidentally exposed sensitive data stored in a Cloud Storage bucket to the public.
 - An attacker gained access to the cloud environment using stolen credentials because MFA was not enabled.
 - The company incurred unexpected costs due to unauthorized resource usage, as there were no billing alerts or monitoring in place.
 
-> For all the resources in this lab, use the **us-east1** region.
+> For all the resources in this lab, we are using the **us-east1** region.
 
-## Lab Objectives
+## Lab objectives
+
 In this lab, you will complete the following exercises:
-- Exercise 1: Create a Resource Group (aka Project).
+
+- Exercise 1: Create a Resource Group (Project). 
 - Exercise 2: Create a GCP IAM User and assign the Security Administrator role.
-- Exercise 3: Configure Identity and Access Management (IAM) for the Project.
+- Exercise 3: Configure Identity and Access Management (IAM) for the Project. 
 - Exercise 4: Enable GCP Cloud Monitoring and Logging.
 - Exercise 5: Set Up Billing Alerts.
 
 ## Instructions
 
-### Exercise 1: Create the Project and assign IAM permissions for the Security User on the Project.
+### Exercise 1: Create the Resource Group (Project) and assign IAM permission for the Security User on the project. 
 
 #### Estimated timing: 15 minutes
-
-> **Note**: Please ensure that you have created a GCP Free Tier Account at (https://cloud.google.com/free).
+    
+>**Note**: Please ensure that you have created a GCP Free Tier Account at (https://cloud.google.com/free).
 
 In this exercise, you will complete the following tasks:
-- Task 1: Create a Project.
+
+- Task 1: Create a Project. 
 - Task 2: Create a GCP IAM User and assign the Security Administrator role.
-- Task 3: Configure Identity and Access Management (IAM) for the Project.
+- Task 3: Configure Identity and Access Management (IAM) for the Project. 
 
-#### Task 1: Create a Project
+#### Task 1: Create a Project 
 
-In this task, you will create a project.
+In this task, you will create a project. 
 
-1. Start a browser session and sign in to the Google Cloud Console **`https://console.cloud.google.com/`**.
+1. Start a browser session and sign-in to the Google Cloud Console **`https://console.cloud.google.com/`**.
 
 2. In the **Google Cloud Console**, click on the project dropdown at the top to open the project selector.
 
@@ -55,59 +60,61 @@ In this task, you will create a project.
 
 In this task, you will create a GCP IAM User and assign the Security Administrator role.
 
-1. Navigate to IAM: Log into AWS Management Console and search for IAM.
+1. In the Google Cloud Console at `https://console.cloud.google.com/`.
 
-2. Create a User:
+2. In the **Navigation menu**, go to **IAM & Admin** and select **Service accounts**.
 
-3. Go to **Users** and click **Add Users**.
+3. On the **Service Accounts** page, select **+ Create Service Account**.
 
-4. Provide a username (e.g., Bob).
+4. On the **Create Service Account** page, specify the following settings:
 
-5. Select Access Key - **Programmatic Access and AWS Management Console Access**.
+   |Setting|Value|
+   |---|---|
+   |Service account name|**Bob**|
+   |Role|**Security Admin**|
+   |Account ID|**Auto-generate**|
+   
+5. Click **Done**.
 
-6. Assign Permissions: and Choose **Attach policies directly**.
-
-8. Search for and select the policy **SecurityAdministrator**.
-
-9. Complete User Creation: Review details, create the user, and download the credentials file.
+6. Copy the **Service Account Key** for Bob.
 
 > **Result**: You created a service account and assigned the Security Admin role.
 
-### Exercise 2: Enable MFA for IAM User.
+### Exercise 2: Configure IAM for the Project.
 
 #### Estimated timing: 5 minutes
 
 In this exercise, you will complete the following tasks:
-- Task 1: Enable MFA for IAM User.
+- Task 1: Configure Identity and Access Management (IAM) for the Project.
 
-#### Task 1: Enable MFA for IAM User.
+#### Task 1: Configure Identity and Access Management (IAM) for the Project.
 
-In this task, you will enable Multifactor Authentication for the user **Bob**.
+In this task, you will assign **Bob** with the **Editor** role for the **CyberP-Project** project.
 
-1. In the **IAM dashboard**, select the **Users** tab.
+1. In the **Navigation menu**, go to **IAM & Admin** and select **IAM**.
 
-2. Click on **Bob**.
+2. On the **IAM** page, click **+ Add**.
 
-3. Under the **Security credentials** tab, locate the Assigned MFA device section and click **Manage**.
+3. In the **Add members** dialog, specify the following:
 
-4. Choose **Virtual MFA device** and click **Continue**.
+   |Setting|Value|
+   |---|---|
+   |New Members|Service account ID of Bob|
+   |Roles|Editor|
 
-5. Use an MFA app like **Google Authenticator** to scan the QR code or manually enter the secret key.
+4. Click **Save**.
 
-6. Enter two consecutive authentication codes from the app to complete the setup.
-
-7. Click **Assign MFA** to save changes.
-
-> **Result**: You successfully enabled MFA for **Bob**.
+> **Result**: You successfully configured IAM for the Project.
 
 ### Exercise 3: Enable GCP Cloud Monitoring and Logging and Set Up Billing Alerts.
 #### Estimated timing: 5 minutes
 
 In this exercise, you will complete the following tasks:
+
 - Task 1: Enable GCP Cloud Monitoring and Logging.
 - Task 2: Set Up Billing Alerts.
 
-#### Task 1: Enable GCP Cloud Monitoring and Logging
+#### Task 1: Enable GCP Cloud Monitoring and Logging.
 
 1. In the **Navigation menu**, go to **Monitoring**.
 
@@ -135,7 +142,7 @@ In this exercise, you will complete the following tasks:
 
 8. Click **Create Log**.
 
-#### Task 2: Set Up Billing Alerts
+#### Task 2: Set Up Billing Alerts.
 
 1. In the **Navigation menu**, go to **Billing**.
 
@@ -160,6 +167,7 @@ In this exercise, you will complete the following tasks:
 > **Result**: You successfully enabled GCP Cloud Monitoring and Logging, and set up billing alerts.
 
 ### Summary of Key Security Practices
+
 - **IAM**: Use least privilege principles for IAM roles and policies.
 - **Logging**: Enable logging and monitoring.
 
