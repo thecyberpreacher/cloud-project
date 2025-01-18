@@ -2,6 +2,8 @@
 
 Explore the following projects to enhance your cloud security posture using Azure's robust security services.
 
+#### Difficulty: Easy
+
 ### 1. **Set Up a Secure Cloud Environment**
 - **Description:** Create a secure Azure environment using IAM roles, policies.
 - **Link:** [Set Up a Secure Cloud Environment](./Azure-Project_1.md)
@@ -13,6 +15,8 @@ Explore the following projects to enhance your cloud security posture using Azur
 ### 3. **Deploy a Web Application with a WAF**
 - **Description:** Deploy a simple web app and configure a Web Application Firewall (WAF) to protect against common attacks like SQL injection and XSS.
 - **Link:** []()
+
+#### Difficulty: Medium
 
 ### 4. **Implement a Zero-Trust Architecture**
 - **Description:** Set up a zero-trust model using tool like Azure AD Conditional Access.
@@ -26,7 +30,29 @@ Explore the following projects to enhance your cloud security posture using Azur
 - **Description:** Deploy a serverless app and secure it using least privilege permissions, API Gateway, and environment variable encryption.
 - **Link:** []()
 
+#### Difficulty: Harde
+
 ### 7. **Perform a Cloud Penetration Test**
+- **Description:** Coming soon.
+- **Link:** []()
+
+### 8. **Coming Soon...**
+- **Description:** Coming soon.
+- **Link:** []()
+
+### 9. **Coming Soon...**
+- **Description:** Coming soon.
+- **Link:** []()
+
+### 10. **Coming Soon...**
+- **Description:** Coming soon.
+- **Link:** []()
+
+### 11. **Coming Soon...**
+- **Description:** Coming soon.
+- **Link:** []()
+
+### 12. **Coming Soon...**
 - **Description:** Coming soon.
 - **Link:** []()
 
