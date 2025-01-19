@@ -60,6 +60,7 @@ In this task, you will Create an Entra ID User and assign the Security Administr
    |---|---|
    |User name|**Bob**|
    |Name|**Bob Saint**|
+   |Role|**Security Admin**|
 
 5. Click on the copy icon next to the **User name** to copy the full user.
 
@@ -81,14 +82,13 @@ In this task, you will Create an Entra ID User and assign the Security Administr
 
 > Result: You used the Azure Portal to create a user and assigned the user the Security Administrator role. 
 
-### Exercise 2: Configure RBAC role for the user.
+### Exercise 2: Set Up MultiFactor Authentication (MFA).
 
 #### Estimated timing: 5 minutes
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Configure Role-Based Access Control (RBAC) for Resource Group.
-- Task 2: Set up Conditional Access for Multi-Factor Authentication (MFA).
+- Task 1: Set up Conditional Access for Multi-Factor Authentication (MFA).
 
 #### Task 2: Set up Conditional Access for Multi-Factor Authentication (MFA)
 
@@ -165,7 +165,8 @@ In this exercise, you will complete the following tasks:
    |---|---|
    |Resource group|**CyberP-Project**|
    |Name|**MyLog**|
-   |Region|**East US**|
+   |Budget Amount|**$25**|
+   > Leave the rest as default, but I'd advice to analyze what each of them does.
    
 5. Click **Next**.
 
