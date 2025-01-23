@@ -9,7 +9,7 @@ In this repository, you will find various projects that demonstrate best practic
 ## Project List
 
 ### 1. **Set Up a Secure Cloud Environment**
-- **Description:** Create a secure Azure environment using IAM roles, policies.
+- **Description:** Create a secure Azure environment using.
 - **Link:** [Set Up a Secure Cloud Environment](./GCP-Project_1.md)
 
 ### 2. **Encrypt Data at Rest and in Transit**

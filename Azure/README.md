@@ -5,7 +5,7 @@ Explore the following projects to enhance your cloud security posture using Azur
 #### Difficulty: Easy
 
 ### 1. **Set Up a Secure Cloud Environment**
-- **Description:** Create a secure Azure environment using IAM roles, policies.
+- **Description:** Create a secure Azure environment.
 - **Link:** [Set Up a Secure Cloud Environment](./Azure-Project_1.md)
 
 ### 2. **Encrypt Data at Rest and in Transit**
