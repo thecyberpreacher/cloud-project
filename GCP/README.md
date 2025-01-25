@@ -13,7 +13,7 @@ In this repository, you will find various projects that demonstrate best practic
 - **Link:** [Set Up a Secure Cloud Environment](./GCP-Project_1.md)
 
 ### 2. **Encrypt Data at Rest and in Transit**
-- **Description:** Use cloud-native tools to encrypt data stored in Azure and enforce HTTPS for data in transit.
+- **Description:** Use cloud-native tools to encrypt data stored in GCP and enforce HTTPS for data in transit.
 - **Link:** []()
 
 ### 3. **Deploy a Web Application with a WAF**
@@ -21,11 +21,11 @@ In this repository, you will find various projects that demonstrate best practic
 - **Link:** []()
 
 ### 4. **Implement a Zero-Trust Architecture**
-- **Description:** Set up a zero-trust model using tool like Azure AD Conditional Access.
+- **Description:** Set up a zero-trust model.
 - **Link:** []()
 
 ### 5. **Automate Security Monitoring with Azure Monitor**
-- **Description:** Configure automated logging and monitoring for cloud resources Azure Monitor.
+- **Description:** Configure automated logging and monitoring for cloud.
 - **Link:** []()
 
 ### 6. **Secure a Serverless Application**
@@ -66,4 +66,4 @@ We welcome contributions from the community. If you have a project or improvemen
 
 ---
 
-Thank you for visiting our AWS Cloud Security Projects repository. We hope you find these resources helpful in securing your AWS environment.
+Thank you for visiting our GCP Cloud Projects repository. We hope you find these resources helpful in securing your GCP environment.
