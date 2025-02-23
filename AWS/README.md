@@ -14,7 +14,7 @@ In this repository, you will find various projects that demonstrate best practic
 
 ### 2. **Encrypt Data at Rest and in Transit**
 - **Description:** Use cloud-native tools to encrypt data stored in AWS and enforce HTTPS for data in transit.
-- **Link:** []()
+- **Link:** [Encrypt Data at Rest and in Transit](./AWS-Project_2.md)
 
 ### 3. **Deploy a Web Application with a WAF**
 - **Description:** Deploy a simple web app and configure a Web Application Firewall (WAF) to protect against common attacks like SQL injection and XSS.
