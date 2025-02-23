@@ -1,5 +1,3 @@
-Here's the AWS counterpart for your Azure project:
-
 ---
 CyberPreacher Lab:
     title: '02 - Encrypt Data at Rest and in Transit'

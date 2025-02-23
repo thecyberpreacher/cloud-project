@@ -224,6 +224,6 @@ In this exercise, you will complete the following tasks:
 
 >**Outcome**: By implementing these steps, the FinTech company ensures that their sensitive financial data is securely stored and transmitted, complying with industry regulations and protecting against potential data breaches. This project scenario highlights the importance of data encryption in maintaining the security and integrity of critical information.
 
-You habe successfully completed this project, ensure you share your experiences and screenshots on LinkedIn using hashtag #cloudprojectwithcyberpreacher #CPwCP.
+You have successfully completed this project, ensure you share your experiences and screenshots on LinkedIn using hashtag #cloudprojectwithcyberpreacher #CPwCP.
 
  >**Note**: Ensure to delete every resources created during this project, to ensure cost management.
