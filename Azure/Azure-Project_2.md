@@ -49,7 +49,7 @@ In this task, you will Create an Azure Storage account.
 
    |Setting|Value|
    |---|---|
-   |Subscription|*<your subscription>*|
+   |Subscription|**<your subscription>**|
    |Resource group|**CyberP-Project**|
    |Storage account name|**demoproject01**|
    |Region|**(US) East US**|
