@@ -2,6 +2,9 @@
 
 Whether you are a beginner aspiring to become an expert or you are a professional looking to get your hands dirty a little bit, then this repository is for you.
 
+**This year 2025, I am building the biggest cloud project base of all time across platforms (AWS, Azure, GCP). With the aim of creating cloud project from scratch starting from Easy down to Extreme difficulty.
+Save this repository, and check back every month for new updates.** 
+
 Access HTML view - https://thecyberpreacher.github.io/cloud-project/
 
 ## Table of Contents
