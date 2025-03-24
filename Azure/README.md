@@ -14,7 +14,7 @@ Explore the following projects to enhance your cloud security posture using Azur
 
 ### 3. **Deploy a Web Application with a WAF**
 - **Description:** Deploy a simple web app and configure a Web Application Firewall (WAF) to protect against common attacks like SQL injection and XSS.
-- **Link:** []()
+- **Link:** [Deploy a Web Application](./Azure-Project_3.md)
 
 #### Difficulty: Medium
 

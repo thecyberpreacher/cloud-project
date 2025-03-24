@@ -18,7 +18,7 @@ In this repository, you will find various projects that demonstrate best practic
 
 ### 3. **Deploy a Web Application with a WAF**
 - **Description:** Deploy a simple web app and configure a Web Application Firewall (WAF) to protect against common attacks like SQL injection and XSS.
-- **Link:** []()
+- **Link:** [Deploy a Web Application](./AWS-Project_3.md)
 
 ### 4. **Implement a Zero-Trust Architecture**
 - **Description:** Set up a zero-trust model using tool.
