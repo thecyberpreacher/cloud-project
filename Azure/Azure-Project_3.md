@@ -98,8 +98,12 @@ In this exercise, you will set up and configure a WAF.
    |Listener name|**newlistener**|
    |Backend targets|.|
    |Backend target|**backend**|
+
    |Backend settings|**(new)settings**|
-   >  Create a new backend settings with name of **settings**, and leave the rest as default. 
+   |Backend protocol|**HTTPS**|
+   |Backend server certificate is issued by a well-known CA|**Yes**|
+
+   >  Click +Add to continue
 
 7. Click **+ Add**.  
 
