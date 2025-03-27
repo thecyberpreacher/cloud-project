@@ -107,19 +107,7 @@ In this exercise, you will set up and configure a WAF.
 
 7. Click **+ Add**.  
 
-8. Click **Review + Create**, then click **Create**.  
-
-#### **Task 2: Configure WAF Rules**  
-
-1. Once the Application Gateway is deployed, navigate to **WAF Policy** under **Settings**.  
-2. Create a new WAF policy and enable **OWASP Core Rule Set (CRS)**.  
-3. Set the rules to protect against **SQL Injection** and **Cross-Site Scripting (XSS)** attacks.  
-4. Save and associate the policy with your Application Gateway.  
-
-> **Result:** You have successfully deployed an Application Gateway with WAF and secured your web app.  
-
----
-
+8. Click **Review + Create**, then click **Create**.
 ### **Exercise 3: Test the WAF with Simulated Attacks**  
 
 #### Estimated Timing: 20 minutes  
