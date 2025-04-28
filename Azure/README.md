@@ -20,7 +20,7 @@ Explore the following projects to enhance your cloud security posture using Azur
 
 ### 4. **Implement a Zero-Trust Architecture**
 - **Description:** Set up a zero-trust model using tool like Azure AD Conditional Access.
-- **Link:** []()
+- **Link:** [Implement a Zero-Trust Architecture](./Azure-Project_4.md)
 
 ### 5. **Automate Security Monitoring with Azure Monitor**
 - **Description:** Configure automated logging and monitoring for cloud resources Azure Monitor.

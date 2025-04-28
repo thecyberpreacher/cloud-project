@@ -22,7 +22,7 @@ In this repository, you will find various projects that demonstrate best practic
 
 ### 4. **Implement a Zero-Trust Architecture**
 - **Description:** Set up a zero-trust model.
-- **Link:** []()
+- **Link:** [Implement a Zero-Trust Architecture](./GCP-Project_4.md)
 
 ### 5. **Automate Security Monitoring with Azure Monitor**
 - **Description:** Configure automated logging and monitoring for cloud.
