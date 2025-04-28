@@ -146,7 +146,11 @@ Monitor the WAF to analyze blocked requests and fine-tune rules.
 1. Use **AWS CloudWatch Insights** to filter and review WAF logs.  
 2. Look for blocked requests and fine-tune rules as needed.
 
----
+
 
 ## **Outcome**  
 By completing this project, you’ll have deployed a secure web application on AWS with WAF protection, configured to defend against common web-based attacks like SQL injection and XSS.
+
+>**Side Task**: Once done, take a screenshot of the completed task and upload on LinkedIn including the Hashtag #cloudprojectwithcyberpreacher #CPwCP while sharing your experiences around the project.
+
+ >**Note**: Ensure to delete every resources created during this project, to ensure cost management.

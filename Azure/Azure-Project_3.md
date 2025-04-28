@@ -147,10 +147,14 @@ In this exercise, you will review WAF logs to analyze the detected attacks.
 2. Use KQL (Kusto Query Language) to filter and review WAF logs for attack attempts.  
 3. Ensure no unauthorized access attempts are detected.  
 
-> **Result:** You have successfully monitored and analyzed WAF logs.  
+> **Result:** You have successfully monitored and analyzed WAF logs.
 
----
+
 
 ## Outcome  
 
 > **Outcome:** By completing this project, you have deployed a secure web application with a Web Application Firewall (WAF) configured to protect against SQL injection and XSS attacks. This project demonstrates the importance of advanced web app security practices.
+
+>**Side Task**: Once done, take a screenshot of the completed task and upload on LinkedIn including the Hashtag #cloudprojectwithcyberpreacher #CPwCP while sharing your experiences around the project.
+
+ >**Note**: Ensure to delete every resources created during this project, to ensure cost management.

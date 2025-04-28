@@ -92,9 +92,9 @@ In this exercise, you will complete the following tasks:
 
 #### Task 2: Set up Conditional Access for Multi-Factor Authentication (MFA)
 
-1. In the search bar at the top of the portal, type **"Azure Active Directory"** and select it from the search results.
+1. In the search bar at the top of the portal, type **"Entra ID"** and select it from the search results.
 
-2. In the Azure Active Directory blade, select **"Security"** from the left-hand menu.
+2. In the Azure Entra ID blade, select **"Security"** from the left-hand menu.
 
 3. Click on **"Conditional Access"** under the **"Security"** section.
 

@@ -135,9 +135,10 @@ Analyze Cloud Armor logs to review blocked threats and refine WAF rules.
 1. Use filters to identify blocked requests and examine details like:  
    - IP addresses of attackers.  
    - Time and frequency of attacks.  
-   - Specific rule violations.  
-
----
-
+   - Specific rule violations.
 ## **Outcome**  
 By completing this project, you’ll have deployed a secure web application on GCP with Cloud Armor as your WAF to mitigate SQL injection and XSS attacks. This will help you understand how to utilize GCP services for enhanced web app security.
+
+>**Side Task**: Once done, take a screenshot of the completed task and upload on LinkedIn including the Hashtag #cloudprojectwithcyberpreacher #CPwCP while sharing your experiences around the project.
+
+ >**Note**: Ensure to delete every resources created during this project, to ensure cost management.
