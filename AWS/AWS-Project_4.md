@@ -1,4 +1,4 @@
-### **AWS Equivalent: Implementing Zero-Trust Architecture**  
+### **AWS: Implementing Zero-Trust Architecture**  
 #### **CyberPreacher Edition**  
 
 A mid-sized company is transitioning to a **Zero-Trust security model** in AWS. Previously, they relied on perimeter security but lacked **identity-based access controls**, making them vulnerable to unauthorized access and insider threats. Their new Zero-Trust strategy focuses on:  
