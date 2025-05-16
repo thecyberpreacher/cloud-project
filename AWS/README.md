@@ -24,9 +24,9 @@ In this repository, you will find various projects that demonstrate best practic
 - **Description:** Set up a zero-trust model using tool.
 - **Link:** [Implement a Zero-Trust Architecture](./AWS-Project_4.md)
 
-### 5. **Automate Security Monitoring with Azure Monitor**
-- **Description:** Configure automated logging and monitoring for cloud resources.
-- **Link:** []()
+### 5. **Secure Virtual machines using Security Groups**
+- **Description:** Deploy and configure security on Virtual Machine using Security Group.
+- **Link:** [Secure Virtual Machines](./AWS-Project_5.md)
 
 ### 6. **Secure a Serverless Application**
 - **Description:** Deploy a serverless app and secure it using least privilege permissions, API Gateway, and environment variable encryption.

@@ -1,4 +1,11 @@
-# **Project 02: Secure Virtual Machines in AWS using Security Groups & Resource Groups**  
+---
+CyberPreacher Lab:  
+    title: '05 - Secure Virtual Machines in AWS using Security Groups'  
+    difficulty: 'Medium'  
+
+---
+
+# **Project 05: Secure Virtual Machines in AWS using Security Groups & Resource Groups**  
 ## **CyberPreacher Edition**  
 
 ### **Project Scenario**  

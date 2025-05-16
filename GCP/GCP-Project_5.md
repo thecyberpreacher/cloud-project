@@ -1,3 +1,10 @@
+---
+CyberPreacher Lab:  
+    title: '05 - Secure Virtual Machines in GCP using Firewall Rules'  
+    difficulty: 'Medium'  
+
+---
+
 # **Project 02: Secure Virtual Machines in GCP using Firewall Rules & Instance Groups**  
 ## **CyberPreacher Edition**  
 

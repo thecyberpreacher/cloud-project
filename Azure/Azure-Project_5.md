@@ -1,14 +1,11 @@
-Certainly! Here’s your step-by-step guide formatted in the same structure.
-
 ---
-
 CyberPreacher Lab:  
-    title: '02 - Secure Virtual Machines in Azure using NSG & ASG'  
+    title: '05 - Secure Virtual Machines in Azure using NSG & ASG'  
     difficulty: 'Medium'  
 
 ---
 
-# Project 02: Secure Virtual Machines in Azure using NSG & ASG  
+# Project 05: Secure Virtual Machines in Azure using NSG & ASG  
 ## CyberPreacher Edition  
 
 ## Project scenario  
