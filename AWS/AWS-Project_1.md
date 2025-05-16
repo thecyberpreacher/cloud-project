@@ -74,17 +74,39 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will assign **Bob** with the **ResourceGroupAdministrator** role for the **CyberP-Project** project.
 
-1. In the **Search AWS services** text box at the top of the AWS Management Console page, type **Resource Groups** and press the **Enter** key.
+ Step 1: Create a Custom IAM Policy
 
-2. In the **Resource Groups** dashboard, click the **CyberP-Project** resource group.
+1. *Go to*: AWS Console → *IAM* → *Policies* → *Create policy*.
+2. *Select the JSON tab* and paste the following:
 
-3. In the **CyberP-Project** dashboard, select **Access**.
+```{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "resource-groups:*",
+                "tag:GetResources",
+                "tag:GetTagKeys",
+                "tag:GetTagValues"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
 
-4. Click **Add permissions**, then select **Policy generator**.
+> 🔐 You can restrict `"Resource": "*"` to your specific group ARN if needed (e.g., `arn:aws:resource-groups:us-east-1:123456789012:group/CyberP-Project`).
 
-5. Create a custom policy granting **ResourceGroupAdministrator** access for this resource group.
+3. Click *Next*, name it something like: `CyberPProjectAdminPolicy`.
+4. Click *Create policy*.
 
-6. Attach the new policy to **Bob**.
+Step 2: Attach the Policy to Bob
+
+1. Go to *IAM* → *Users* → Click on *Bob*.
+2. Go to the *Permissions* tab.
+3. Click *Add permissions* → *Attach policies directly*.
+4. Find and select *CyberPProjectAdminPolicy*.
+5. Click *Next*, then *Add permissions*.
 
 > **Result**: You successfully configured IAM for the Project.
 
