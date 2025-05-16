@@ -75,6 +75,7 @@ In this exercise, you will complete the following tasks:
 In this task, you will assign **Bob** with the **ResourceGroupAdministrator** role for the **CyberP-Project** project.
 
  Step 1: Create a Custom IAM Policy
+> Note: The ARN is gotten from the resource group dashboard
 
 1. *Go to*: AWS Console → *IAM* → *Policies* → *Create policy*.
 2. *Select the JSON tab* and paste the following:
