@@ -24,9 +24,9 @@ In this repository, you will find various projects that demonstrate best practic
 - **Description:** Set up a zero-trust model.
 - **Link:** [Implement a Zero-Trust Architecture](./GCP-Project_4.md)
 
-### 5. **Automate Security Monitoring with Azure Monitor**
-- **Description:** Configure automated logging and monitoring for cloud.
-- **Link:** []()
+### 5. **Secure Virtual Machines in GCP using Firewall Rules**
+- **Description:** Deploy and configure security on Virtual Machine using firewall rules.
+- **Link:** [Secure Virtual machines](./GCP-Project_5.md)
 
 ### 6. **Secure a Serverless Application**
 - **Description:** Deploy a serverless app and secure it using least privilege permissions, API Gateway, and environment variable encryption.

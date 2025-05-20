@@ -5,7 +5,7 @@ CyberPreacher Lab:
 
 ---
 
-# **Project 02: Secure Virtual Machines in GCP using Firewall Rules & Instance Groups**  
+# **Project 05: Secure Virtual Machines in GCP using Firewall Rules & Instance Groups**  
 ## **CyberPreacher Edition**  
 
 ### **Project Scenario**  
