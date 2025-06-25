@@ -26,9 +26,9 @@ Explore the following projects to enhance your cloud security posture using Azur
 - **Description:** Deploy and configure security on Virtual Machine using Network Security Group and Application Security Group
 - **Link:** [Secure Virtual Machines](./Azure-Project_5.md)
 
-### 6. **Secure a Serverless Application**
-- **Description:** Deploy a serverless app and secure it using least privilege permissions, API Gateway, and environment variable encryption.
-- **Link:** []()
+### 6. **Secure Enterprise App Deployment**
+- **Description:** Deploy an enterprise app and secure it using least privilege permissions, API Gateway, and environment variable encryption.
+- **Link:** [Secure Enterprise App Deployment](./Azure-Project_6.md)
 
 #### Difficulty: Harde
 

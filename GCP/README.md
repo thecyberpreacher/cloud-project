@@ -28,9 +28,9 @@ In this repository, you will find various projects that demonstrate best practic
 - **Description:** Deploy and configure security on Virtual Machine using firewall rules.
 - **Link:** [Secure Virtual machines](./GCP-Project_5.md)
 
-### 6. **Secure a Serverless Application**
-- **Description:** Deploy a serverless app and secure it using least privilege permissions, API Gateway, and environment variable encryption.
-- **Link:** []()
+### 6. **Secure Enterprise App Deployment**
+- **Description:** Deploy an enterprise app and secure it using least privilege permissions, API Gateway, and environment variable encryption.
+- **Link:** [Secure Enterprise App Deployment](./GCP-Project_6.md)
 
 ### 7. **Perform a Cloud Penetration Test**
 - **Description:** Coming soon.
