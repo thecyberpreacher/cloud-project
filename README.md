@@ -7,13 +7,6 @@ Save this repository, and check back every month for new updates.**
 
 Access HTML view - https://thecyberpreacher.github.io/cloud-project/
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Project List](#project-list)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 Welcome to the CyberPreacher Cloud Project Arena! This section will guide you through the various cloud security projects designed to enhance your practical skills and knowledge in cloud security.
 
