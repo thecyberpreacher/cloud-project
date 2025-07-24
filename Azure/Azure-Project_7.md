@@ -23,8 +23,6 @@ In this lab, you will complete the following exercises:
 - Exercise 5: Set Up Microsoft Sentinel and Ingest Security Logs  
 - Exercise 6: Upload Geolocation Watchlist and Visualize Attacks  
 
----
-
 ## Instructions  
 
 ### Exercise 1: Create Resource Group and Virtual Network  
@@ -133,16 +131,8 @@ Task 1: Create a virtual machine named **TI-NET-EAST-1**
 In this exercise, you will:  
 - Task 1: Delete default RDP inbound rule in NSG  
 - Task 2: Create a custom inbound rule with the following configuration:  
-  Source: Any  
-  Source port ranges: *  
-  Destination: Any  
-  Destination port ranges: *  
-  Protocol: Any  
-  Action: Allow  
-  Priority: 100  
-  Name: **DANGER_AllowAnyCustomAnyInbound**
-
 - Task 3: Connect to VM using RDP and disable firewall via **wf.msc**
+
 #### Task 1: Delete Default RDP Inbound Rule in NSG  
 
 1. Open [Azure Portal](https://portal.azure.com) and log in with your credentials.  
@@ -168,7 +158,21 @@ In this exercise, you will:
     - **Name**: `DANGER_AllowAnyCustomAnyInbound`  
 3. Click **Add** to save the rule.  
 
-> Result: VM becomes vulnerable to public attacks.
+#### Task 3: Connect to VM Using RDP and Disable Firewall via **wf.msc**
+
+1. Open an RDP client on your local machine.  
+2. Enter the public IP address of the virtual machine **TI-NET-EAST-1**.  
+3. Use the credentials you set during the VM creation to log in.  
+4. Once logged in, press **Win + R** to open the Run dialog box.  
+5. Type `wf.msc` and press **Enter** to open the Windows Defender Firewall with Advanced Security.  
+6. In the left-hand menu, select **Windows Defender Firewall Properties**.  
+7. For each profile (Domain, Private, and Public):  
+    - Click on the profile tab.  
+    - Set **Firewall state** to **Off**.  
+    - Click **OK** to save changes.  
+8. Close the firewall settings window.  
+
+> Result: The firewall is disabled, leaving the VM fully exposed to incoming traffic. VM becomes vulnerable to public attacks.
 
 
 ### Exercise 4: Simulate Attacks and Analyze Logs  
@@ -269,7 +273,7 @@ In this exercise, you will:
 
 In this exercise, you will:  
 - Task 1: Upload geolocation watchlist as a CSV named **geoip**  
-  (From Josh Madakor’s YouTube description)  
+  [From Josh Madakor’s YouTube description](https://youtu.be/g5JL2RIbThM?si=oJpcQnUF8DQ30BAD) 
 - Task 2: Use enhanced KQL query to associate failed logins with geolocation:  
   ```
   let GeoIPDB_FULL = _GetWatchlist("geoip");  
