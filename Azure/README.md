@@ -32,9 +32,9 @@ Explore the following projects to enhance your cloud security posture using Azur
 
 #### Difficulty: Harde
 
-### 7. **Perform a Cloud Penetration Test**
-- **Description:** Coming soon.
-- **Link:** []()
+### 7. **Building a Cloud SOC Lab**
+- **Description:** Deploy and analyze attack patterns in a cloud environment.
+- **Link:** [Building a Cloud SOC Lab](./Azure-Project_7.md)
 
 ### 8. **Coming Soon...**
 - **Description:** Coming soon.
