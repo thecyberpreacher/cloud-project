@@ -20,8 +20,7 @@ In this lab, you will complete the following exercises:
 - Exercise 2: Launch and Configure an EC2 Instance  
 - Exercise 3: Configure Security Groups and Disable Firewall  
 - Exercise 4: Simulate Attacks and Analyze Logs  
-- Exercise 5: Set Up CloudWatch Logs and Query with Athena  
-- Exercise 6: Upload Geolocation Data and Visualize Attacks  
+- Exercise 5: Set Up CloudWatch Logs and Query with Visualization
 
 ## Instructions  
 
@@ -154,7 +153,7 @@ In this exercise, you will:
 
 > Result: Failed login attempts are logged in the EC2 instance.
 
-### Exercise 5: Set Up CloudWatch Logs and Query with Athena  
+### Exercise 5: Set Up CloudWatch Logs and Query with Visualization
 #### Estimated timing: 20 minutes  
 
 In this exercise, you will:  

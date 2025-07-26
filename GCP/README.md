@@ -32,9 +32,9 @@ In this repository, you will find various projects that demonstrate best practic
 - **Description:** Deploy an enterprise app and secure it using least privilege permissions, API Gateway, and environment variable encryption.
 - **Link:** [Secure Enterprise App Deployment](./GCP-Project_6.md)
 
-### 7. **Perform a Cloud Penetration Test**
-- **Description:** Coming soon.
-- **Link:** []()
+### 7. **Building a Cloud SOC Lab**
+- **Description:** Deploy and analyze attack patterns in a cloud environment.
+- **Link:** [Building a Cloud SOC Lab](./GCP-Project_7.md)
 
 ### 8. **Coming Soon...**
 - **Description:** Coming soon.
