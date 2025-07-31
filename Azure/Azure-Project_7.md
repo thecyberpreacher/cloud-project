@@ -272,25 +272,137 @@ In this exercise, you will:
 #### Estimated timing: 20 minutes  
 
 In this exercise, you will:  
-- Task 1: Upload geolocation watchlist as a CSV named **geoip**  
-  [From Josh Madakor’s YouTube description](https://youtu.be/g5JL2RIbThM?si=oJpcQnUF8DQ30BAD) 
-- Task 2: Use enhanced KQL query to associate failed logins with geolocation:  
-  ```
-  let GeoIPDB_FULL = _GetWatchlist("geoip");  
-  let WindowsEvents = SecurityEvent  
-   | where EventID == 4625  
-   | order by TimeGenerated desc  
-   | evaluate ipv4_lookup(GeoIPDB_FULL, IpAddress, network)  
-   | summarize FailureCount = count() by IpAddress, latitude, longitude, cityname, countryname  
-   | project FailureCount, AttackerIp = IpAddress, latitude, longitude, city = cityname, country = countryname,  
-    friendly_location = strcat(cityname, " (", countryname, ")");
-  ```
+#### Task 1: Upload Geolocation Watchlist as a CSV Named **geoip**
 
-- Task 3: Paste the JSON snippet provided into the Advanced Editor of a Sentinel Workbook to visualize global attack traffic
+1. Open [Azure Portal](https://portal.azure.com) and log in with your credentials.
 
-> Result: Geospatial attack data appears in the map visualization  
+2. In the left-hand menu, search for **Microsoft Sentinel** and select it.
 
----
+3. Navigate to the **Watchlist** section under the **Configuration** menu.
+
+4. Click **+ Add new watchlist** at the top of the page.
+
+5. Configure the watchlist settings:
+    - **Name**: Enter `geoip`.
+    - **Description**: Enter a brief description (e.g., `Geolocation mapping for attacker IPs`).
+
+6. Under **Upload file**, click **Browse** and select the CSV file containing geolocation data.  
+    - Example file: [Josh Madakor’s Geo IP](https://raw.githubusercontent.com/joshmadakor1/lognpacific-public/refs/heads/main/misc/geoip-summarized.csv).
+
+7. Ensure the file format is valid and matches the required schema:
+    - Columns: `IpAddress`, `latitude`, `longitude`, `cityname`, `countryname`.
+
+8. Click **Next** to proceed.
+
+9. Review the configuration and click **Create** to upload the watchlist.
+
+> Result: The geolocation watchlist named **geoip** is successfully uploaded and available for use in Sentinel queries. 
+
+
+#### Task 2: Use Enhanced KQL Query to Associate Failed Logins with Geolocation  
+
+1. **Open Microsoft Sentinel Logs Pane**  
+    - Navigate to [Azure Portal](https://portal.azure.com).  
+    - Select **Microsoft Sentinel** from the left-hand menu.  
+    - Choose the Log Analytics Workspace you created earlier (e.g., `SOC-Logs`).  
+    - Under the **General** section, click **Logs**.  
+
+2. **Prepare the Enhanced KQL Query**  
+    - In the query editor, paste the following KQL query:  
+      ```kql
+      let GeoIPDB_FULL = _GetWatchlist("geoip");  
+      let WindowsEvents = SecurityEvent  
+            | where EventID == 4625  
+            | order by TimeGenerated desc  
+            | evaluate ipv4_lookup(GeoIPDB_FULL, IpAddress, network)  
+            | summarize FailureCount = count() by IpAddress, latitude, longitude, cityname, countryname  
+            | project FailureCount, AttackerIp = IpAddress, latitude, longitude, city = cityname, country = countryname,  
+              friendly_location = strcat(cityname, " (", countryname, ")");
+      ```  
+
+3. **Run the Query**  
+    - Click **Run** to execute the query.  
+    - Wait for the results to populate.  
+
+4. **Review the Results**  
+    - Examine the output table to identify failed login attempts.  
+    - Key columns include:  
+      - `FailureCount`: Number of failed login attempts.  
+      - `AttackerIp`: IP address of the attacker.  
+      - `latitude` and `longitude`: Geolocation coordinates.  
+      - `city` and `country`: Location details.  
+      - `friendly_location`: Combined city and country for easier visualization.  
+
+5. **Save the Query**  
+    - Click **Save Query** at the top of the Logs pane.  
+    - Provide a name (e.g., `FailedLoginsGeoMapping`) and save it for future use.  
+
+> Result: The enhanced KQL query associates failed login attempts with geolocation data, enabling detailed analysis of attacker origins.  
+ 
+#### Task 3: Paste the JSON Snippet into the Advanced Editor of a Sentinel Workbook  
+
+1. **Open Microsoft Sentinel**  
+    - Navigate to [Azure Portal](https://portal.azure.com).  
+    - Select **Microsoft Sentinel** from the left-hand menu.  
+    - Choose the Log Analytics Workspace you created earlier (e.g., `SOC-Logs`).  
+
+2. **Create a New Workbook**  
+    - In the Sentinel dashboard, navigate to the **Workbooks** section under the **Threat Management** menu.  
+    - Click **+ Add workbook** at the top of the page.  
+
+3. **Open the Advanced Editor**  
+    - In the workbook editor, click on the **Advanced Editor** option located in the top-right corner.  
+
+4. **Paste the JSON Snippet**  
+    - Copy the JSON snippet provided in the instructions.  
+    - Paste the snippet into the Advanced Editor.  
+```
+{
+	"type": 3,
+	"content": {
+	"version": "KqlItem/1.0",
+	"query": "let GeoIPDB_FULL = _GetWatchlist(\"geoip\");\nlet WindowsEvents = SecurityEvent;\nWindowsEvents | where EventID == 4625\n| order by TimeGenerated desc\n| evaluate ipv4_lookup(GeoIPDB_FULL, IpAddress, network)\n| summarize FailureCount = count() by IpAddress, latitude, longitude, cityname, countryname\n| project FailureCount, AttackerIp = IpAddress, latitude, longitude, city = cityname, country = countryname,\nfriendly_location = strcat(cityname, \" (\", countryname, \")\");",
+	"size": 3,
+	"timeContext": {
+		"durationMs": 2592000000
+	},
+	"queryType": 0,
+	"resourceType": "microsoft.operationalinsights/workspaces",
+	"visualization": "map",
+	"mapSettings": {
+		"locInfo": "LatLong",
+		"locInfoColumn": "countryname",
+		"latitude": "latitude",
+		"longitude": "longitude",
+		"sizeSettings": "FailureCount",
+		"sizeAggregation": "Sum",
+		"opacity": 0.8,
+		"labelSettings": "friendly_location",
+		"legendMetric": "FailureCount",
+		"legendAggregation": "Sum",
+		"itemColorSettings": {
+		"nodeColorField": "FailureCount",
+		"colorAggregation": "Sum",
+		"type": "heatmap",
+		"heatmapPalette": "greenRed"
+		}
+	}
+	},
+	"name": "query - 0"
+}
+```
+
+5. **Save the Workbook**  
+    - Click **Apply** to save the changes.  
+    - Provide a name for the workbook (e.g., `Global Attack Traffic Visualization`).  
+    - Click **Save** to finalize the workbook creation.  
+
+6. **Review the Visualization**  
+    - Navigate back to the workbook view.  
+    - Ensure the map visualization is displaying global attack traffic based on the geolocation data.  
+
+> Result: The Sentinel workbook now visualizes global attack traffic using the geolocation watchlist and failed login data.  
+  
 
 ## Summary of Key Security Practices  
 
@@ -302,3 +414,5 @@ In this exercise, you will:
 > Note: Delete all resources once project is completed to prevent unnecessary charges.
 
 > Side Task: Share screenshots on LinkedIn showing attack visualization and include hashtags **#cloudprojectwithcyberpreacher** and **#CPwCP**. Share your experience and learnings from this SOC lab.
+
+Credit goes to Josh Madakor for creating this lab. (https://www.youtube.com/@JoshMadakor)
