@@ -1,0 +1,16 @@
+UserPrincipalName,DisplayName,FirstName,LastName,JobTitle,Department,UsageLocation,AccountEnabled
+john.doe@yourdomain.com,John Doe,John,Doe,IT Analyst,IT,San Francisco,FALSE
+jane.smith@yourdomain.com,Jane Smith,Jane,Smith,HR Manager,HR,San Francisco,FALSE
+michael.brown@yourdomain.com,Michael Brown,Michael,Brown,Finance Officer,Finance,San Francisco,FALSE
+emily.jones@yourdomain.com,Emily Jones,Emily,Jones,Marketing Lead,Marketing,San Francisco,FALSE
+david.lee@yourdomain.com,David Lee,David,Lee,Security Engineer,IT,San Francisco,FALSE
+sarah.kim@yourdomain.com,Sarah Kim,Sarah,Kim,Legal Advisor,Legal,San Francisco,FALSE
+daniel.ng@yourdomain.com,Daniel Ng,Daniel,Ng,Operations Manager,Operations,San Francisco,FALSE
+linda.oke@yourdomain.com,Linda Oke,Linda,Oke,Sales Executive,Sales,San Francisco,FALSE
+paul.ade@yourdomain.com,Paul Ade,Paul,Ade,Support Specialist,Support,San Francisco,FALSE
+rita.obi@yourdomain.com,Rita Obi,Rita,Obi,Data Analyst,Analytics,San Francisco,FALSE
+alex.jordan@yourdomain.com,Alex Jordan,Alex,Jordan,System Administrator,IT,Chicago,FALSE
+nina.wells@yourdomain.com,Nina Wells,Nina,Wells,Project Manager,IT,Chicago,FALSE
+tyrone.clark@yourdomain.com,Tyrone Clark,Tyrone,Clark,UX Designer,IT,Chicago,FALSE
+monica.reed@yourdomain.com,Monica Reed,Monica,Reed,Data Scientist,IT,Chicago,FALSE
+brandon.cho@yourdomain.com,Brandon Cho,Brandon,Cho,Network Engineer,IT,Chicago,FALSE
