@@ -29,6 +29,7 @@ The Tenant contains the groups shown in the following table.
 The Azure Subscription contains the following Resource Groups. **AZ500RG1** and **AZ500RG2**
 
 **AZ500RG1** has the following resources:
+
 ![AZ500RG1 Resource Group Overview](media/AZ500RG1.jpg)
 
 To reconstruct the environment, use the prebuilt ARM Deployment Template that I created for this Lab.
@@ -475,3 +476,5 @@ To ensure users can access their VMs, you must properly configure both the Azure
   - If access fails, review firewall rules, NSG settings, and JIT access configuration.
 
 **Tip:** Always restrict access to only trusted IPs and required ports to maintain security.
+
+![Final](media/AZ500RG1.png)
