@@ -30,15 +30,15 @@ Explore the following projects to enhance your cloud security posture using Azur
 - **Description:** Deploy an enterprise app and secure it using least privilege permissions, API Gateway, and environment variable encryption.
 - **Link:** [Secure Enterprise App Deployment](./Azure-Project_6.md)
 
-#### Difficulty: Harde
+#### Difficulty: Hard
 
 ### 7. **Building a Cloud SOC Lab**
 - **Description:** Deploy and analyze attack patterns in a cloud environment.
 - **Link:** [Building a Cloud SOC Lab](./Azure-Project_7.md)
 
-### 8. **Coming Soon...**
-- **Description:** Coming soon.
-- **Link:** []()
+### 8. **Organizational Case Study 1**
+- **Description:** Deploying different services to meet organization requirements while ensuring security, cost efficiency and operational efficiency.
+- **Link:** [Case Study 1](./Azure-Project_8.md)
 
 ### 9. **Coming Soon...**
 - **Description:** Coming soon.
