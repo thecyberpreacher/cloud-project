@@ -8,8 +8,9 @@ CyberPreacher Lab:
 ## CyberPreacher Edition  
 
 ## Summary
+This project provides a comprehensive case study for deploying and securing an Azure environment for CyberPreacher LTD, a digital media company with distributed teams in Chicago and San Francisco. The lab guides you through reconstructing the company's Azure infrastructure using ARM templates, configuring networking and security (including Azure Firewall, route tables, and AKS), and implementing identity and access controls with Entra ID. It also covers platform protection requirements such as antimalware deployment, JIT VM access, custom RBAC roles, and enforcing application registration and consent policies. The solution emphasizes best practices for resource management, secure access, and compliance with organizational security standards.
 
-### Compamy Overview  
+## Compamy Overview  
 
 CyberPreacher LTD is a digital media company that has 5 employees in the Chicago area and 10 employees in the San Francisco area.
 
@@ -29,7 +30,17 @@ The Tenant contains the groups shown in the following table.
 The Azure Subscription contains the following Resource Groups. **AZ500RG1** and **AZ500RG2**
 
 **AZ500RG1** has the following resources:
+|Name|Type|Description|
+|---|---|---|
+|VNet1|Virtual network|VNet1 is a virtual network that contains security-sensitive IT resources. VNet1 contains three subnets named Subnet0, Subnet1, and AzureFirewallSubnet.|
+|VM0|Virtual machine|VM0 is an Azure virtual machine that runs windows server 2016 and connects to Subnet0.|
+|VM1|Virtual machine|VM1 is an Azure virtual machine that runs Windows Server 2016 and connects to Subnet0.|
+|SQLDB1|Azure SQL Database|Sqldb1 is an Azure SQL database on a SQL Database server named LitwareSQLServer1.|
+|WebApp1|Web app|WebApp1 is an azure web app that is accessible by using https://example.com|
+|AZ500RG1|Resource group|AZ500RG1 is a resource group that contains VNet1, VM0, and VM1.|
+|AZ500RG2|Resource group|AZ500RG2 is a resource group that contains shared IT resources.|
 
+Azure Security Center is set to Free Tier. 
 ![AZ500RG1 Resource Group Overview](media/AZ500RG1.jpg)
 
 To reconstruct the environment, use the prebuilt ARM Deployment Template that I created for this Lab.
