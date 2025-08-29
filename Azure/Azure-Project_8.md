@@ -29,7 +29,6 @@ The Tenant contains the groups shown in the following table.
 
 The Azure Subscription contains the following Resource Groups. **AZ500RG1** and **AZ500RG2**
 
-**AZ500RG1** has the following resources:
 |Name|Type|Description|
 |---|---|---|
 |VNet1|Virtual network|VNet1 is a virtual network that contains security-sensitive IT resources. VNet1 contains three subnets named Subnet0, Subnet1, and AzureFirewallSubnet.|
@@ -41,6 +40,8 @@ The Azure Subscription contains the following Resource Groups. **AZ500RG1** and 
 |AZ500RG2|Resource group|AZ500RG2 is a resource group that contains shared IT resources.|
 
 Azure Security Center is set to Free Tier. 
+
+**AZ500RG1** has the following resources:
 ![AZ500RG1 Resource Group Overview](media/AZ500RG1.jpg)
 
 To reconstruct the environment, use the prebuilt ARM Deployment Template that I created for this Lab.
