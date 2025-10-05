@@ -8,7 +8,7 @@ CyberPreacher Lab:
 ## CyberPreacher Edition  
 
 ## Summary
-TBU
+This project details the design and implementation of a secure, multi-region Azure infrastructure for CyberPreacher LTD, a consulting company with offices in Montreal, Seattle, and New York. It covers the deployment of resource groups, virtual networks, subnets, network security groups, and virtual machines across West US and Central US regions. The solution includes VNET peering for seamless connectivity, application security groups, disk encryption, just-in-time VM access, and secure management of application secrets using Azure Key Vault with private endpoints. It also addresses compliance requirements such as conditional access policies, customer-managed storage encryption, and integration with Azure Sentinel for security monitoring and investigation. The project ensures that all technical and organizational requirements are met for a robust, compliant, and scalable cloud environment.
 
 ## Compamy Overview  
 
@@ -80,7 +80,7 @@ Subscription1 contains a storage account named storage1 in the West US Azure reg
 Fabrikam plans to implement the following table.
 
 |Name|Location|
-|---|---|---|
+|---|---|
 |ASG1|West US|
 |ASG2|Central US|
 
