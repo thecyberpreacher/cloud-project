@@ -57,7 +57,7 @@ Subscription1 contains the virtual networks shown in the following table.
 Subscription1 contains the network security groups (NSGs) shown in the following table.
 
 |Name|Location|
-|---|---|---|
+|---|---|
 |NSG2|West US|
 |NSG3|Central US|
 |NSG4|West US|
