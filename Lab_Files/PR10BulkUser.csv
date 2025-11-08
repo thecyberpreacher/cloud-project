@@ -1,0 +1,13 @@
+UserPrincipalName,DisplayName,FirstName,LastName,JobTitle,Department,UsageLocation,AccountEnabled
+john.doe@yourdomain.com,John Doe,John,Doe,IT Analyst,Helpdesk,Montreal,FALSE
+jane.smith@yourdomain.com,Jane Smith,Jane,Smith,HR Manager,HR,Montreal,FALSE
+michael.brown@yourdomain.com,Michael Brown,Michael,Brown,Finance Officer,HR,Montreal,FALSE
+emily.jones@yourdomain.com,Emily Jones,Emily,Jones,Marketing Lead,HR,Montreal,FALSE
+david.lee@yourdomain.com,David Lee,David,Lee,Security Engineer,Helpdesk,London,FALSE
+sarah.kim@yourdomain.com,Sarah Kim,Sarah,Kim,Legal Advisor,Finance,London,FALSE
+daniel.ng@yourdomain.com,Daniel Ng,Daniel,Ng,Operations Manager,Sales,London,FALSE
+linda.oke@yourdomain.com,Linda Oke,Linda,Oke,Sales Executive,Sales,London,FALSE
+paul.ade@yourdomain.com,Paul Ade,Paul,Ade,Support Specialist,Helpdesk,Seattle,FALSE
+rita.obi@yourdomain.com,Rita Obi,Rita,Obi,Data Analyst,Sales,Seattle,FALSE
+alex.jordan@yourdomain.com,Alex Jordan,Alex,Jordan,System Administrator,Sales,Seattle,FALSE
+nina.wells@yourdomain.com,Nina Wells,Nina,Wells,Project Manager,Sales,Seattle,FALSE
