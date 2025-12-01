@@ -12,18 +12,18 @@ montero Lab:
 
 ## Compamy Overview  
 
-cyber Corporation is a consulting company in Montreal.
+Cyber Corporation is a consulting company in Montreal.
 
-cyber recently acquired a Vancouver-based company named montero, Inc.
+Cyber recently acquired a Vancouver-based company named Montero, Inc.
 
 ## Existing Environment. cyber Environment
 
-The on-premises network of cyber contains an Active Directory Domain Services (AD DS) forest named cyber.com.
+The on-premises network of Cyber contains an Active Directory Domain Services (AD DS) forest named cyber.com.
 
-cyber has a Microsoft 365 E5 subscription. The subscription contains a verified domain that syncs with the cyber.com AD DS domain by
+Cyber has a Microsoft 365 E5 subscription. The subscription contains a verified domain that syncs with the cyber.com AD DS domain by
 using Entra ID Connect.
 
-cyber has an Azure Active Directory (Entra ID) tenant named cyber.com. The tenant has Security defaults disabled.
+Cyber has an Azure Active Directory (Entra ID) tenant named cyber.com. The tenant has Security defaults disabled.
 
 The tenant contains the users shown in the following table.
 
@@ -44,11 +44,11 @@ The tenant contains the groups shown in the following table.
 
 ## Existing Environment. montero Environment
 
-montero has an AD DS forest named montero.com
+Montero has an AD DS forest named montero.com
 
 Existing Environment. Problem Statements
 
-cyber identifies the following issues:
+Cyber identifies the following issues:
 
 - Multiple users in the sales department have up to five devices. The sales department users report that sometimes they must contact the support department to join their devices to the Entra ID tenant because they have reached their device limit.
 - A recent security incident reveals that several users leaked their credentials, a suspicious browser was used for a sign-in, and resources were accessed from an anonymous IP address.
