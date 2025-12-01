@@ -490,3 +490,7 @@ To ensure users can access their VMs, you must properly configure both the Azure
 **Tip:** Always restrict access to only trusted IPs and required ports to maintain security.
 
 ![Final](media/AZ500RG1.png)
+
+> Note: Delete all resources once project is completed to prevent unnecessary charges.
+
+> Side Task: Share screenshots on LinkedIn showing attack visualization and include hashtags **#cloudprojectwithcyberpreacher** and **#CPwCP**. Share your experience and learnings from this SOC lab.

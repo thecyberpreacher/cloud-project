@@ -712,3 +712,7 @@ To ensure KeyVault1 traffic does NOT travel over the internet:
 
 
 ![Final](./media/RG1.jpg)
+
+> Note: Delete all resources once project is completed to prevent unnecessary charges.
+
+> Side Task: Share screenshots on LinkedIn showing attack visualization and include hashtags **#cloudprojectwithcyberpreacher** and **#CPwCP**. Share your experience and learnings from this SOC lab.

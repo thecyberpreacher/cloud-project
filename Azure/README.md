@@ -48,9 +48,9 @@ Explore the following projects to enhance your cloud security posture using Azur
 - **Description:** Deploying different services to meet organization requirements while ensuring security, cost efficiency and operational efficiency.
 - **Link:** [Case Study 3](./Azure-Project_10.md)
 
-### 11. **Coming Soon...**
-- **Description:** Coming soon.
-- **Link:** []()
+### 11. **Organizational Case Study 4**
+- **Description:** Deploying different services to meet organization requirements while ensuring security, cost efficiency and operational efficiency.
+- **Link:** [Case Study 4](./Azure-Project_11.md)
 
 ### 12. **Coming Soon...**
 - **Description:** Coming soon.
