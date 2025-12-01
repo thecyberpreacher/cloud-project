@@ -1,11 +1,11 @@
 ---
-montero Lab:
+CyberPreacher Lab:
     title: '11 - Organization Case Study 4'
     difficulty: 'Hard'
 ---
 
 # Project 11: Organization Case Study 4
-## montero Edition  
+## CyberPreacher Edition  
 
 ## Summary
 
@@ -16,7 +16,7 @@ Cyber Corporation is a consulting company in Montreal.
 
 Cyber recently acquired a Vancouver-based company named Montero, Inc.
 
-## Existing Environment. cyber Environment
+## Existing Environment. Cyber Environment
 
 The on-premises network of Cyber contains an Active Directory Domain Services (AD DS) forest named cyber.com.
 
