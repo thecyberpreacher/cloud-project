@@ -9,6 +9,7 @@ CyberPreacher Lab:
 
 ## Summary
 
+This project implements enterprise identity and security controls for Cyber Corporation following an acquisition. The objectives include: restricting device limits to 10 per user, enabling multi-factor authentication for all users, configuring self-service password reset, requiring admin approval for application consent, restricting guest invitations to admins only, implementing Privileged Identity Management with time-limited role access, syncing the acquired Montero forest to Entra ID without establishing domain trusts, and fixing group-based role assignments to meet least privilege requirements.
 
 ## Compamy Overview  
 

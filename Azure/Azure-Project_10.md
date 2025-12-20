@@ -9,6 +9,7 @@ CyberPreacher Lab:
 
 ## Summary
 
+This project involves implementing Azure AD enhancements for CyberPreacher LTD, a consulting firm with offices in Montreal, London, and Seattle. The primary goals are to streamline user management through automated license allocation based on office location, implement self-service password reset, enable audit logging via Azure Monitor, configure Privileged Identity Management for administrative roles, establish external B2B collaboration with Fabrikam (limited to 90 days), deploy a custom web application with Azure AD authentication, and automate access workflows for the marketing department. Additionally, the organization will integrate 100 new users from an acquired company (ADatum) into the existing Azure AD infrastructure while maintaining scoped administrative permissions for helpdesk teams per office location.
 
 ## Compamy Overview  
 
